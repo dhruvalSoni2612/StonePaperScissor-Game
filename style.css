@@ -1,0 +1,53 @@
+body {
+  text-align: center;
+}
+h1 {
+  font-family: "Rubik Broken Fax", system-ui;
+  font-size: 50px;
+}
+#score {
+  font-size: 35px;
+  font-family: "EB Garamond", serif;
+  background: -webkit-linear-gradient(blue, hotpink, skyblue, pink);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#result {
+  color: red;
+}
+#computerMove {
+  color: #65dcc4;
+}
+#userMove {
+  color: #8e66cf;
+}
+.chose_button {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+}
+button {
+  border: 2px dotted red;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 25px;
+}
+
+button:hover {
+  border: 2px solid red;
+}
+button:active {
+  background-color: red;
+}
+
+#reset_button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 40%;
+  background-color: lightseagreen;
+}
+
+#reset_button:hover {
+  background-color: lightskyblue;
+}

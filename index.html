@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Broken+Fax&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Rubik+Broken+Fax&display=swap"
+      rel="stylesheet"
+    />
+    <title>Stone Paper Scissor Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Stone Paper Scissor Game</h1>
+
+    <button
+      onclick="
+     let computerChoice = genaretComputerChoice();
+     let resultMsg = getResult('stone', computerChoice);
+     showResult('stone', computerChoice, resultMsg);
+    "
+    >
+      <img class="chose_button" src="img/stone.jpg" alt="stone button" />
+    </button>
+
+    <button
+      onclick="
+    computerChoice = genaretComputerChoice();
+    resultMsg = getResult('paper', computerChoice);
+    showResult('paper', computerChoice, resultMsg);
+    "
+    >
+      <img class="chose_button" src="img/paper.jpg" alt="paper button" />
+    </button>
+
+    <button
+      onclick="
+    computerChoice = genaretComputerChoice();
+    resultMsg = getResult('scissor', computerChoice);
+    showResult('scissor', computerChoice, resultMsg);
+    "
+    >
+      <img class="chose_button" src="img/scissor.png" alt="scissir button" />
+    </button>
+
+    <h2 id="userMove"></h2>
+    <h2 id="computerMove"></h2>
+    <h2 id="result"></h2>
+    <h2 id="score"></h2>
+
+    <button
+      id="reset_button"
+      onclick="localStorage.clear()
+    resetScore()"
+    >
+      Reset
+    </button>
+
+    <script src="index.js"></script>
+  </body>
+</html>
